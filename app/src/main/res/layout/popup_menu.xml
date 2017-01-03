@@ -5,7 +5,7 @@
 
     <TextView
         android:id="@+id/popup_title"
-        android:text="Discussion &amp; Advice"
+        android:text="   Discussion &amp; Advice"
         android:background="@color/colorPrimaryLight"
         android:textSize="18dp"
         android:gravity="center_vertical"
