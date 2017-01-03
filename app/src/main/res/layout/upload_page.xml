@@ -1,17 +1,182 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingLeft="30dp"
-    android:paddingRight="30dp">
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
 
-    <ImageButton
-        android:layout_height="300dp"
-        app:srcCompat="@drawable/upload_space"
-        android:id="@+id/imageButton"
-        android:scaleX="0.8"
-        android:scaleY="0.8"
-        android:layout_gravity="center_horizontal"
-        android:layout_width="360dp" />
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_upload_page"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/menu_in_upload_page"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@color/colorPrimary"
+                    android:scaleType="fitCenter"
+                    android:scaleX="0.7"
+                    android:scaleY="0.8"
+                    android:src="@drawable/ic_menu_white_24dp_1x" />
+
+                <ImageButton
+                    android:id="@+id/back_in_upload_page"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@color/colorPrimary"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_keyboard_arrow_left_white_24dp_1x" />
+
+                <Space
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="New Item"
+                    android:textSize="28dp"/>
+                <Space
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent" />
+
+                <ImageButton
+                    android:id="@+id/home_in_upload_page"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@color/colorPrimary"
+                    android:scaleType="fitCenter"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    android:src="@drawable/ic_home_white_24dp_1x" />
+
+            </LinearLayout>
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:fabSize="mini"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="360dp"
+            android:layout_marginRight="30dp"
+            android:layout_gravity="bottom|end"
+            android:src="@drawable/ic_keyboard_arrow_right_white_24dp_1x" />
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="30dp">
+
+            <ImageButton
+                android:src="@drawable/upload_space"
+                android:id="@+id/imageButton"
+                android:scaleX="1"
+                android:scaleY="1"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="148dp"
+                android:layout_marginBottom="15dp"/>
+
+            <TextView
+                android:text="Location"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginBottom="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/uploadLocationTitle"
+                android:textSize="18dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/edit_text_background"
+                android:layout_marginBottom="3dp"/>
+            <TextView
+                android:text="Availability"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginBottom="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/uploadAvailabilityTitle"
+                android:textSize="18dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp">
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/edit_text_background"/>
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/edit_text_background"/>
+            </LinearLayout>
+            <TextView
+                android:text="Tags"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginBottom="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/uploadTagsTitle"
+                android:textSize="18dp"/>
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:background="@drawable/edit_text_background"
+                android:layout_marginBottom="3dp"/>
+            <TextView
+                android:text="Occasion"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginBottom="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/uploadOccasionTitle"
+                android:textSize="18dp"/>2
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:background="@drawable/edit_text_background"
+                android:layout_marginBottom="3dp"/>
+            <TextView
+                android:text="Description"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginBottom="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/itemDescriptionTitle"
+                android:textSize="18dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/edit_text_background"
+                android:layout_marginBottom="3dp"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
 </LinearLayout>
