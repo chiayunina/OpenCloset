@@ -1,6 +1,9 @@
 package com.project_sharing.opencloset.opencloset;
 
-import android.content.DialogInterface;
+/**
+ * Created by andytu28 on 1/4/17.
+ */
+
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -10,34 +13,21 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.ImageButton;
 import android.content.Intent;
+import android.widget.ImageButton;
 
-/**
- * Created by andytu28 on 1/4/17.
- */
-
-public class upload_page extends AppCompatActivity implements View.OnClickListener {
+public class item_list extends AppCompatActivity implements View.OnClickListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.upload_page);
-
-        ImageButton home_in_upload_page = (ImageButton)findViewById(R.id.home_in_upload_page);
-        home_in_upload_page.setOnClickListener(this);
-
-        ImageButton back_in_upload_page = (ImageButton)findViewById(R.id.back_in_upload_page);
-        back_in_upload_page.setOnClickListener(this);
+        setContentView(R.layout.list_content);
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.home_in_upload_page:
-                startActivity(new Intent(this, Index.class));
-                break;
-            case R.id.back_in_upload_page:
-                this.finish();
+            case R.id.discussionContent:
+                startActivity(new Intent(this, item_page.class));
                 break;
         }
     }
@@ -56,7 +46,6 @@ public class upload_page extends AppCompatActivity implements View.OnClickListen
         // as you specify a parent activity in AndroidManifest.xml.
 
         //noinspection SimplifiableIfStatement
-
         return super.onOptionsItemSelected(item);
     }
 }
