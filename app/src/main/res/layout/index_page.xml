@@ -93,7 +93,7 @@
                 android:orientation="horizontal"
                 android:paddingLeft="20dp">
 
-                <ImageView
+                <!-- <ImageView
                     android:layout_width="80dp"
                     android:layout_height="120dp"
                     android:src="@drawable/main_pic"
@@ -109,7 +109,7 @@
                     android:layout_width="80dp"
                     android:layout_height="120dp"
                     android:src="@drawable/main_pic"
-                    android:layout_marginRight="20dp"/>
+                    android:layout_marginRight="20dp"/> -->
 
             </LinearLayout>
 
@@ -134,7 +134,7 @@
                 android:orientation="horizontal"
                 android:paddingLeft="20dp">
 
-                <ImageView
+                <!-- <ImageView
                     android:layout_width="80dp"
                     android:layout_height="120dp"
                     android:src="@drawable/main_pic"
@@ -150,7 +150,7 @@
                     android:layout_width="80dp"
                     android:layout_height="120dp"
                     android:src="@drawable/main_pic"
-                    android:layout_marginRight="20dp"/>
+                    android:layout_marginRight="20dp"/> -->
 
             </LinearLayout>
 
