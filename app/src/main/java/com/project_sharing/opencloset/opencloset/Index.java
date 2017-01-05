@@ -28,8 +28,6 @@ public class Index extends AppCompatActivity implements View.OnClickListener, Na
         super.onCreate(savedInstanceState);
         setContentView(R.layout.index_page);
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layerout);
-
         NavigationView navigationView = (NavigationView)findViewById(R.id.navigation_view);
         navigationView.setNavigationItemSelectedListener(this);
 
