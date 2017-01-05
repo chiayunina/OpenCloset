@@ -53,6 +53,10 @@ public class upload_page extends AppCompatActivity implements View.OnClickListen
                 this.finish();
                 break;
             case R.id.upload:
+                Intent intent = new Intent(this, success.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent);
+                finish();
                 break;
             case R.id.menu_in_upload_page:
                 DrawerLayout drawer = (DrawerLayout)findViewById(R.id.upload_drawer_layout);
