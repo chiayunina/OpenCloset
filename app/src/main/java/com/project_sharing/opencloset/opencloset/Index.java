@@ -19,6 +19,7 @@ import android.content.Intent;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 public class Index extends AppCompatActivity implements View.OnClickListener, NavigationView.OnNavigationItemSelectedListener {
 
@@ -87,6 +88,15 @@ public class Index extends AppCompatActivity implements View.OnClickListener, Na
 
     @Override
     public boolean onNavigationItemSelected(MenuItem menu) {
+        switch (menu.getItemId()) {
+            case R.id.interview:
+                startActivity(new Intent(this, item_list.class));
+                break;
+            case R.id.office:
+                break;
+        }
+        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layerout);
+        drawer.closeDrawer(GravityCompat.START);
         return true;
     }
 }

@@ -6,9 +6,9 @@
         android:orderInCategory="100" app:showAsAction="never" />
      -->
     <item
-        android:id="@+id/menu1"
-        android:title="menu1" />
+        android:id="@+id/interview"
+        android:title="interview" />
     <item
-        android:id="@+id/menu2"
-        android:title="menu2" />
+        android:id="@+id/office"
+        android:title="office" />
 </menu>
