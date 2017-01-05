@@ -5,6 +5,10 @@
     <item android:id="@+id/action_settings" android:title="@string/action_settings"
         android:orderInCategory="100" app:showAsAction="never" />
      -->
-    <item android:id="@+id/upload" android:icon="@drawable/ic_file_upload_white_24dp_1x"
-        android:orderInCategory="100" app:showAsAction="always" />
+    <item
+        android:id="@+id/menu1"
+        android:title="menu1" />
+    <item
+        android:id="@+id/menu2"
+        android:title="menu2" />
 </menu>
