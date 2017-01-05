@@ -34,7 +34,7 @@ public class upload_page extends AppCompatActivity implements View.OnClickListen
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.home_in_upload_page:
-                startActivity(new Intent(this, Index.class));
+                NavUtils.navigateUpFromSameTask(this);
                 break;
             case R.id.back_in_upload_page:
                 this.finish();
