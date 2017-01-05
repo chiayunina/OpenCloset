@@ -82,6 +82,7 @@
                 android:drawableLeft="@drawable/ic_search_white_24dp_1x" />
 
             <ListView
+                android:id="@+id/list_content"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
