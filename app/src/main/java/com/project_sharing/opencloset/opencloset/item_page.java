@@ -71,6 +71,7 @@ public class item_page extends AppCompatActivity implements View.OnClickListener
                 break;
             case R.id.fab2:
                 startActivity(new Intent(this, popup_list.class));
+                overridePendingTransition(R.anim.bottom_in, R.anim.no_change);
                 break;
         }
     }

@@ -39,10 +39,17 @@ public class popup_list extends AppCompatActivity {
         ArrayList<String> aas = new ArrayList<String>();
         aas.add("123");
         aas.add("123");
+        aas.add("123");
 
         CommentListAdapter ila = new CommentListAdapter(this, aas);
         ListView list_view = (ListView) findViewById(R.id.popup_list);
         list_view.setAdapter(ila);
+    }
+
+    @Override
+    public void finish() {
+        super.finish();
+        overridePendingTransition(R.anim.no_change, R.anim.bottom_out);
     }
 }
 
