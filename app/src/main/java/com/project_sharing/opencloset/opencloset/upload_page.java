@@ -42,7 +42,7 @@ public class upload_page extends AppCompatActivity implements View.OnClickListen
                 break;
             case R.id.upload:
                 startActivity(new Intent(this, Index.class));
-                PopupWindow popUpWindow = new PopupWindow(this);
+                PopupWindow popUpWindow = new PopupWindow();
                 popUpWindow.setContentView(findViewById(R.id.success_popup));
                 break;
         }
