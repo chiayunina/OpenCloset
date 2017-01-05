@@ -33,7 +33,7 @@
                     android:src="@drawable/ic_menu_white_24dp_1x" />
 
                 <ImageButton
-                    android:id="@+id/back_in_item_page"
+                    android:id="@+id/back_in_list_page"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:background="@color/colorPrimary"
@@ -45,7 +45,7 @@
                     android:layout_height="match_parent" />
 
                 <ImageButton
-                    android:id="@+id/home_in_item_page"
+                    android:id="@+id/home_in_list_page"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:background="@color/colorPrimary"
@@ -55,7 +55,7 @@
                     android:src="@drawable/ic_home_white_24dp_1x" />
 
                 <ImageButton
-                    android:id="@+id/upload_in_item_page"
+                    android:id="@+id/upload_in_list_page"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:background="@color/colorPrimary"

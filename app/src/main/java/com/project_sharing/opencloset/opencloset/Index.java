@@ -41,7 +41,7 @@ public class Index extends AppCompatActivity implements View.OnClickListener, Na
         menu_in_index_page.setOnClickListener(this);
 
         LinearLayout layout = (LinearLayout) findViewById(R.id.linear);
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 0; i++) {
             ImageView imageView = new ImageView(this);
             imageView.setId(i);
             imageView.setPadding(2, 2, 2, 2);
@@ -52,7 +52,7 @@ public class Index extends AppCompatActivity implements View.OnClickListener, Na
         }
 
         LinearLayout layout2 = (LinearLayout) findViewById(R.id.linear2);
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 0; i++) {
             ImageView imageView = new ImageView(this);
             imageView.setId(i);
             imageView.setPadding(2, 2, 2, 2);
