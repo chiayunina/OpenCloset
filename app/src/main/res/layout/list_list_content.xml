@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="180dp"
+    xmlns:app="http://schemas.android.com/apk/lib/com.project_sharing.opencloset.opencloset"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/userImg"
+        android:layout_width="120dp"
+        android:layout_height="180dp"
+        android:src="@drawable/pic4" />
+
+
+    <LinearLayout
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:paddingLeft="20dp">
+
+        <TextView
+            android:id="@+id/listItemName"
+            android:onClick="onClick"
+            android:text="Suit1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:paddingTop="5dp"
+            android:textSize="36sp" />
+
+        <TextView
+            android:id="@+id/listItemLocation"
+            android:onClick="onClick"
+            android:text="Location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:paddingTop="2dp"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/listItemAvailability"
+            android:onClick="onClick"
+            android:text="Availability"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:paddingTop="2dp"
+            android:textSize="20sp" />
+        <RatingBar
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/ratingBar"
+            style="?android:attr/ratingBarStyleIndicator"
+            android:scaleX="0.6"
+            android:scaleY="0.6"
+            android:transformPivotX="10dp"
+            android:transformPivotY="30dp"
+            android:numStars="5"
+            android:rating="4"
+            android:isIndicator="false" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:tint="@color/colorPrimary"
+        android:src="@drawable/ic_keyboard_arrow_right_white_24dp"/>
+
+</LinearLayout>

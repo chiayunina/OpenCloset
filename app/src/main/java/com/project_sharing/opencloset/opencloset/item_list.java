@@ -5,22 +5,17 @@ package com.project_sharing.opencloset.opencloset;
  */
 
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.support.v4.app.NavUtils;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.content.Intent;
-import android.widget.ImageButton;
 
 public class item_list extends AppCompatActivity implements View.OnClickListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.list_content);
+        setContentView(R.layout.popup_list_content);
     }
 
     @Override
