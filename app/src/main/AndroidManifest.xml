@@ -19,11 +19,18 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".success"
+            android:name=".popup_list"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.PopupSuccess"
+            android:theme="@style/AppTheme.Popup"
             android:screenOrientation="portrait"
             android:parentActivityName=".item_page">
+        </activity>
+        <activity
+            android:name=".success"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.Popup"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".upload_page">
         </activity>
         <activity
             android:name=".item_list"

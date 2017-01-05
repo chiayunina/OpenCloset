@@ -40,6 +40,7 @@ public class item_list extends AppCompatActivity implements View.OnClickListener
         ArrayList<String> aas = new ArrayList<String>();
         aas.add("123");
         aas.add("123");
+        aas.add("123");
 
         ItemListAdapter ila = new ItemListAdapter(this, aas);
         ListView list_view = (ListView) findViewById(R.id.list_content);

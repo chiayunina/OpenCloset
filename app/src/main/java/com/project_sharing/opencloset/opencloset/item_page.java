@@ -44,7 +44,7 @@ public class item_page extends AppCompatActivity implements View.OnClickListener
         FloatingActionButton fab1 = (FloatingActionButton)findViewById(R.id.fab1);
         fab1.setOnClickListener(this);
 
-        FloatingActionButton fab2 = (FloatingActionButton)findViewById(R.id.fab1);
+        FloatingActionButton fab2 = (FloatingActionButton)findViewById(R.id.fab2);
         fab2.setOnClickListener(this);
 
         ImageButton menu_in_item_page = (ImageButton)findViewById(R.id.menu_in_item_page);
@@ -70,6 +70,7 @@ public class item_page extends AppCompatActivity implements View.OnClickListener
             case R.id.fab1:
                 break;
             case R.id.fab2:
+                startActivity(new Intent(this, popup_list.class));
                 break;
         }
     }

@@ -8,6 +8,7 @@
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
     tools:openDrawer="start">
+
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -261,7 +262,6 @@
         </LinearLayout>
     </RelativeLayout>
 </LinearLayout>
-
 
 <android.support.design.widget.NavigationView
 android:id="@+id/item_navigation_view"
