@@ -1,161 +1,180 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layerout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
 
-    <android.support.design.widget.AppBarLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
-
-
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar_item_page"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="@color/colorPrimary"
-            app:popupTheme="@style/AppTheme.PopupOverlay">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ImageButton
-                    android:id="@+id/menu_in_item_page"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:background="@color/colorPrimary"
-                    android:scaleType="fitCenter"
-                    android:scaleX="0.7"
-                    android:scaleY="0.8"
-                    android:src="@drawable/ic_menu_white_24dp_1x" />
-
-                <Space
-                    android:layout_width="10dp"
-                    android:layout_height="match_parent" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:gravity="center_vertical"
-                    android:text="Index"
-                    android:textSize="28dp"/>
-
-                <Space
-                    android:layout_width="180dp"
-                    android:layout_height="match_parent" />
-
-                <ImageButton
-                    android:id="@+id/upload_in_item_page"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:background="@color/colorPrimary"
-                    android:scaleType="fitCenter"
-                    android:scaleX="0.8"
-                    android:scaleY="0.8"
-                    android:src="@drawable/ic_file_upload_white_24dp_1x" />
-
-            </LinearLayout>
-        </android.support.v7.widget.Toolbar>
-
-    </android.support.design.widget.AppBarLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="wrap_content"
         android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:menu="@menu/menu_index" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
         android:orientation="vertical"
-        android:background="@color/colorPrimaryLight">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="264dp"
-            android:src="@drawable/main_pic"
-            android:layout_marginBottom="20dp"/>
-
-        <TextView
+        <android.support.design.widget.AppBarLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="  Today's Pickup"
-            android:textSize="30dp"
-            android:layout_marginBottom="10dp"/>
+            android:theme="@style/AppTheme.AppBarOverlay">
 
-        <HorizontalScrollView
-            android:id="@+id/horizontal_scroll2"
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar_index_page"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/menu_in_index_page"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@color/colorPrimary"
+                        android:scaleType="fitCenter"
+                        android:scaleX="0.7"
+                        android:scaleY="0.8"
+                        android:src="@drawable/ic_menu_white_24dp_1x" />
+
+                    <Space
+                        android:layout_width="10dp"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="Index"
+                        android:textSize="28dp"/>
+
+                    <Space
+                        android:layout_width="180dp"
+                        android:layout_height="match_parent" />
+
+                    <ImageButton
+                        android:id="@+id/upload_in_index_page"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@color/colorPrimary"
+                        android:scaleType="fitCenter"
+                        android:scaleX="0.8"
+                        android:scaleY="0.8"
+                        android:src="@drawable/ic_file_upload_white_24dp_1x" />
+
+                </LinearLayout>
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/colorPrimaryLight">
 
-            <LinearLayout
-                android:id="@+id/linear2"
-                android:layout_width="wrap_content"
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="264dp"
+                android:src="@drawable/main_pic"
+                android:layout_marginBottom="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:paddingLeft="20dp">
+                android:text="  Today's Pickup"
+                android:textSize="30dp"
+                android:layout_marginBottom="10dp"/>
 
-                <!-- <ImageView
-                    android:layout_width="80dp"
-                    android:layout_height="120dp"
-                    android:src="@drawable/main_pic"
-                    android:layout_marginRight="20dp"/>
+            <HorizontalScrollView
+                android:id="@+id/horizontal_scroll2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
 
-                <ImageView
-                    android:layout_width="80dp"
-                    android:layout_height="120dp"
-                    android:src="@drawable/main_pic"
-                    android:layout_marginRight="20dp"/>
+                <LinearLayout
+                    android:id="@+id/linear2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp">
 
-                <ImageView
-                    android:layout_width="80dp"
-                    android:layout_height="120dp"
-                    android:src="@drawable/main_pic"
-                    android:layout_marginRight="20dp"/> -->
+                    <!-- <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/main_pic"
+                        android:layout_marginRight="20dp"/>
 
-            </LinearLayout>
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/main_pic"
+                        android:layout_marginRight="20dp"/>
 
-        </HorizontalScrollView>
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/main_pic"
+                        android:layout_marginRight="20dp"/> -->
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="  Latest Uploads"
-            android:textSize="30dp"
-            android:layout_marginBottom="10dp"/>
+                </LinearLayout>
 
-        <HorizontalScrollView
-            android:id="@+id/horizontal_scroll"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
+            </HorizontalScrollView>
 
-            <LinearLayout
-                android:id="@+id/linear"
-                android:layout_width="wrap_content"
+            <TextView
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:paddingLeft="20dp">
+                android:text="  Latest Uploads"
+                android:textSize="30dp"
+                android:layout_marginBottom="10dp"/>
 
-                <!-- <ImageView
-                    android:layout_width="80dp"
-                    android:layout_height="120dp"
-                    android:src="@drawable/main_pic"
-                    android:layout_marginRight="20dp"/>
+            <HorizontalScrollView
+                android:id="@+id/horizontal_scroll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
 
-                <ImageView
-                    android:layout_width="80dp"
-                    android:layout_height="120dp"
-                    android:src="@drawable/main_pic"
-                    android:layout_marginRight="20dp"/>
+                <LinearLayout
+                    android:id="@+id/linear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp">
 
-                <ImageView
-                    android:layout_width="80dp"
-                    android:layout_height="120dp"
-                    android:src="@drawable/main_pic"
-                    android:layout_marginRight="20dp"/> -->
+                    <!-- <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/main_pic"
+                        android:layout_marginRight="20dp"/>
 
-            </LinearLayout>
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/main_pic"
+                        android:layout_marginRight="20dp"/>
 
-        </HorizontalScrollView>
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/main_pic"
+                        android:layout_marginRight="20dp"/> -->
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+        </LinearLayout>
 
     </LinearLayout>
-
-</LinearLayout>
+</android.support.v4.widget.DrawerLayout>
