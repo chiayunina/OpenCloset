@@ -12,6 +12,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ImageButton;
 import android.content.Intent;
+import android.widget.PopupWindow;
 
 /**
  * Created by andytu28 on 1/4/17.
@@ -38,6 +39,11 @@ public class upload_page extends AppCompatActivity implements View.OnClickListen
                 break;
             case R.id.back_in_upload_page:
                 this.finish();
+                break;
+            case R.id.upload:
+                startActivity(new Intent(this, Index.class));
+                PopupWindow popUpWindow = new PopupWindow(this);
+                popUpWindow.setContentView(findViewById(R.id.success_popup));
                 break;
         }
     }
