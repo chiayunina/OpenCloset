@@ -9,14 +9,6 @@
     android:fitsSystemWindows="true"
     tools:openDrawer="start">
 
-    <android.support.design.widget.NavigationView
-        android:id="@+id/navigation_view"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_gravity="start"
-        android:fitsSystemWindows="true"
-        app:menu="@menu/menu_index" />
-
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:orientation="vertical"
@@ -111,24 +103,6 @@
                     android:orientation="horizontal"
                     android:paddingLeft="20dp">
 
-            <!-- <ImageView
-                    android:layout_width="80dp"
-                    android:layout_height="120dp"
-                    android:src="@drawable/main_pic"
-                    android:layout_marginRight="20dp"/>
-
-                <ImageButton
-                    android:layout_width="80dp"
-                    android:layout_height="120dp"
-                    android:src="@drawable/main_pic"
-                    android:layout_marginRight="20dp"/>
-
-                <ImageButton
-                    android:layout_width="80dp"
-                    android:layout_height="120dp"
-                    android:src="@drawable/main_pic"
-                    android:layout_marginRight="20dp"/> -->
-
                 </LinearLayout>
 
             </HorizontalScrollView>
@@ -152,23 +126,6 @@
                     android:orientation="horizontal"
                     android:paddingLeft="20dp">
 
-                    <!-- <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="120dp"
-                        android:src="@drawable/main_pic"
-                        android:layout_marginRight="20dp"/>
-                <ImageButton
-                    android:layout_width="80dp"
-                    android:layout_height="120dp"
-                    android:src="@drawable/main_pic"
-                    android:layout_marginRight="20dp"/>
-
-                <ImageButton
-                    android:layout_width="80dp"
-                    android:layout_height="120dp"
-                    android:src="@drawable/main_pic"
-                    android:layout_marginRight="20dp"/> -->
-
                 </LinearLayout>
 
             </HorizontalScrollView>
@@ -176,4 +133,13 @@
         </LinearLayout>
 
     </LinearLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:menu="@menu/menu_index" />
+
 </android.support.v4.widget.DrawerLayout>

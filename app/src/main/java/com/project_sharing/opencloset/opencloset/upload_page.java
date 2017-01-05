@@ -29,6 +29,9 @@ public class upload_page extends AppCompatActivity implements View.OnClickListen
 
         ImageButton back_in_upload_page = (ImageButton)findViewById(R.id.back_in_upload_page);
         back_in_upload_page.setOnClickListener(this);
+
+        FloatingActionButton upload = (FloatingActionButton) findViewById(R.id.upload);
+        upload.setOnClickListener(this);
     }
 
     @Override
@@ -41,9 +44,6 @@ public class upload_page extends AppCompatActivity implements View.OnClickListen
                 this.finish();
                 break;
             case R.id.upload:
-                startActivity(new Intent(this, Index.class));
-                PopupWindow popUpWindow = new PopupWindow();
-                popUpWindow.setContentView(findViewById(R.id.success_popup));
                 break;
         }
     }
