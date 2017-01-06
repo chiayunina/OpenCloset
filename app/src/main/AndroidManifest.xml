@@ -4,7 +4,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/logo"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
@@ -19,11 +19,18 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".list_page"
+            android:name=".popup_list"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar"
+            android:theme="@style/AppTheme.Popup"
             android:screenOrientation="portrait"
-            android:parentActivityName=".Index">
+            android:parentActivityName=".item_page">
+        </activity>
+        <activity
+            android:name=".success"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.Popup"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".upload_page">
         </activity>
         <activity
             android:name=".item_list"

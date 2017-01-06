@@ -1,5 +1,8 @@
 package com.project_sharing.opencloset.opencloset;
 
+import android.support.design.widget.NavigationView;
+import android.support.v4.view.GravityCompat;
+import android.support.v4.widget.DrawerLayout;
 import android.view.View;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -13,17 +16,21 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.content.Intent;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 /**
  * Created by andytu28 on 1/4/17.
  */
 
-public class item_page extends AppCompatActivity implements View.OnClickListener {
+public class item_page extends AppCompatActivity implements View.OnClickListener, NavigationView.OnNavigationItemSelectedListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.item_page);
+
+        NavigationView navigationView = (NavigationView)findViewById(R.id.item_navigation_view);
+        navigationView.setNavigationItemSelectedListener(this);
 
         ImageButton home_in_item_page = (ImageButton)findViewById(R.id.home_in_item_page);
         home_in_item_page.setOnClickListener(this);
@@ -37,8 +44,11 @@ public class item_page extends AppCompatActivity implements View.OnClickListener
         FloatingActionButton fab1 = (FloatingActionButton)findViewById(R.id.fab1);
         fab1.setOnClickListener(this);
 
-        FloatingActionButton fab2 = (FloatingActionButton)findViewById(R.id.fab1);
+        FloatingActionButton fab2 = (FloatingActionButton)findViewById(R.id.fab2);
         fab2.setOnClickListener(this);
+
+        ImageButton menu_in_item_page = (ImageButton)findViewById(R.id.menu_in_item_page);
+        menu_in_item_page.setOnClickListener(this);
     }
 
     @Override
@@ -53,28 +63,40 @@ public class item_page extends AppCompatActivity implements View.OnClickListener
             case R.id.upload_in_item_page:
                 startActivity(new Intent(this, upload_page.class));
                 break;
+            case R.id.menu_in_item_page:
+                DrawerLayout drawer = (DrawerLayout)findViewById(R.id.item_drawer_layout);
+                drawer.openDrawer(GravityCompat.START);
+                break;
             case R.id.fab1:
                 break;
             case R.id.fab2:
+                startActivity(new Intent(this, popup_list.class));
+                overridePendingTransition(R.anim.bottom_in, R.anim.no_change);
                 break;
         }
     }
 
     @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        // getMenuInflater().inflate(R.menu.menu_index, menu);
-        return true;
+    public void onBackPressed() {
+        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.item_drawer_layout);
+        if (drawer.isDrawerOpen(GravityCompat.START)) {
+            drawer.closeDrawer(GravityCompat.START);
+        } else {
+            super.onBackPressed();
+        }
     }
 
     @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-
-        //noinspection SimplifiableIfStatement
-
-        return super.onOptionsItemSelected(item);
+    public boolean onNavigationItemSelected(MenuItem menu) {
+        switch (menu.getItemId()) {
+            case R.id.interview:
+                startActivity(new Intent(this, item_list.class));
+                break;
+            case R.id.office:
+                break;
+        }
+        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.item_drawer_layout);
+        drawer.closeDrawer(GravityCompat.START);
+        return true;
     }
 }

@@ -39,7 +39,6 @@
 
         <TextView
             android:id="@+id/discussionContent"
-            android:onClick="onClick"
             android:text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

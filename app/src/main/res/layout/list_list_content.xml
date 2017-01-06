@@ -21,7 +21,6 @@
 
         <TextView
             android:id="@+id/listItemName"
-            android:onClick="onClick"
             android:text="Suit1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -31,7 +30,6 @@
 
         <TextView
             android:id="@+id/listItemLocation"
-            android:onClick="onClick"
             android:text="Location"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -41,7 +39,6 @@
 
         <TextView
             android:id="@+id/listItemAvailability"
-            android:onClick="onClick"
             android:text="Availability"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -66,6 +63,7 @@
     <ImageButton
         android:layout_width="50dp"
         android:layout_height="match_parent"
+        android:onClick="viewButtonClick"
         android:tint="@color/colorPrimary"
         android:src="@drawable/ic_keyboard_arrow_right_white_24dp"/>
 
