@@ -39,8 +39,8 @@ public class upload_page extends AppCompatActivity implements View.OnClickListen
         FloatingActionButton upload = (FloatingActionButton) findViewById(R.id.upload);
         upload.setOnClickListener(this);
 
-        ImageButton menu_in_upload_page = (ImageButton) findViewById(R.id.menu_in_upload_page);
-        menu_in_upload_page.setOnClickListener(this);
+        /*ImageButton menu_in_upload_page = (ImageButton) findViewById(R.id.menu_in_upload_page);
+        menu_in_upload_page.setOnClickListener(this);*/
     }
 
     @Override
@@ -58,10 +58,10 @@ public class upload_page extends AppCompatActivity implements View.OnClickListen
                 startActivity(intent);
                 finish();
                 break;
-            case R.id.menu_in_upload_page:
+            /*case R.id.menu_in_upload_page:
                 DrawerLayout drawer = (DrawerLayout)findViewById(R.id.upload_drawer_layout);
                 drawer.openDrawer(GravityCompat.START);
-                break;
+                break;*/
         }
     }
 

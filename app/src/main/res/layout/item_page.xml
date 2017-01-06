@@ -39,7 +39,7 @@
                     android:scaleType="fitCenter"
                     android:scaleX="0.7"
                     android:scaleY="0.8"
-                    android:src="@drawable/ic_menu_white_24dp_2x" />
+                    android:src="@drawable/ic_menu_white_24dp" />
 
                 <ImageButton
                     android:id="@+id/back_in_item_page"
@@ -61,7 +61,7 @@
                     android:scaleType="fitCenter"
                     android:scaleX="0.7"
                     android:scaleY="0.7"
-                    android:src="@drawable/ic_home_white_24dp_2x" />
+                    android:src="@drawable/ic_home_white_24dp" />
 
                 <ImageButton
                     android:id="@+id/upload_in_item_page"
@@ -71,7 +71,7 @@
                     android:scaleType="fitCenter"
                     android:scaleX="0.8"
                     android:scaleY="0.8"
-                    android:src="@drawable/ic_file_upload_white_24dp_2x" />
+                    android:src="@drawable/ic_file_upload_white_24dp" />
 
             </LinearLayout>
         </android.support.v7.widget.Toolbar>

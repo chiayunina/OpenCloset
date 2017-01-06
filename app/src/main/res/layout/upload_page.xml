@@ -50,7 +50,7 @@
                     android:text="New Item"
                     android:textSize="28dp"/>
                 <Space
-                    android:layout_width="100dp"
+                    android:layout_width="80dp"
                     android:layout_height="match_parent" />
 
                 <ImageButton
@@ -61,7 +61,7 @@
                     android:scaleType="fitCenter"
                     android:scaleX="0.7"
                     android:scaleY="0.7"
-                    android:src="@drawable/ic_home_white_24dp_2x" />
+                    android:src="@drawable/ic_home_white_24dp" />
 
             </LinearLayout>
         </android.support.v7.widget.Toolbar>
@@ -76,10 +76,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:clickable="true"
-            app:fabSize="mini"
             android:id="@+id/upload"
             android:layout_alignParentRight="true"
-            android:layout_marginTop="360dp"
+            android:layout_marginTop="390dp"
             android:layout_marginRight="30dp"
             android:layout_gravity="bottom|end"
             android:src="@drawable/ic_keyboard_arrow_right_white_24dp" />
@@ -93,13 +92,14 @@
             android:paddingTop="30dp">
 
             <ImageButton
-                android:src="@drawable/upload_space"
+                android:src="@drawable/ic_add_white_24dp"
+                android:background="@color/colorPrimaryLight"
                 android:id="@+id/imageButton"
                 android:scaleX="1"
                 android:scaleY="1"
                 android:layout_gravity="center_horizontal"
-                android:layout_width="wrap_content"
-                android:layout_height="148dp"
+                android:layout_width="300dp"
+                android:layout_height="150dp"
                 android:layout_marginBottom="15dp"/>
 
             <TextView

@@ -55,8 +55,8 @@ public class item_list extends AppCompatActivity implements View.OnClickListener
         ImageButton upload_in_list_page = (ImageButton)findViewById(R.id.upload_in_list_page);
         upload_in_list_page.setOnClickListener(this);
 
-        ImageButton menu_in_list_page = (ImageButton)findViewById(R.id.menu_in_list_page);
-        menu_in_list_page.setOnClickListener(this);
+        /*ImageButton menu_in_list_page = (ImageButton)findViewById(R.id.menu_in_list_page);
+        menu_in_list_page.setOnClickListener(this);*/
     }
 
     public void viewButtonClick(View v) {
@@ -75,10 +75,10 @@ public class item_list extends AppCompatActivity implements View.OnClickListener
             case R.id.back_in_list_page:
                 this.finish();
                 break;
-            case R.id.menu_in_list_page:
+            /*case R.id.menu_in_list_page:
                 DrawerLayout drawer = (DrawerLayout)findViewById(R.id.list_drawer_layout);
                 drawer.openDrawer(GravityCompat.START);
-                break;
+                break;*/
         }
     }
 

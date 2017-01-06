@@ -3,6 +3,7 @@
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/lib/com.project_sharing.opencloset.opencloset"
+    android:background="@color/colorPrimaryLight"
     android:orientation="horizontal">
 
     <LinearLayout
@@ -16,11 +17,12 @@
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_margin="5dp"
-            app:srcCompat="@mipmap/ic_launcher" />
+            android:src="@drawable/user_pic1" />
 
         <TextView
             android:id="@+id/userName"
             android:text="user"
+            android:textColor="@color/colorBlack"
             android:gravity="center"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -40,11 +42,12 @@
         <TextView
             android:id="@+id/discussionContent"
             android:text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
+            android:textColor="@color/colorBlack"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
             android:paddingTop="5dp"
-            android:textSize="22sp" />
+            android:textSize="18sp" />
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -58,6 +61,7 @@
                 android:layout_height="30dp"
                 android:layout_gravity="right"
                 android:tint="@color/colorPrimary"
+                android:background="@color/colorPrimaryLight"
                 android:src="@drawable/ic_thumb_up_white_24dp_1x"/>
             <TextView
                 android:layout_width="wrap_content"
