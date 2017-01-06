@@ -45,8 +45,8 @@ public class Index extends AppCompatActivity implements View.OnClickListener, Na
             ImageView imageView = new ImageView(this);
             imageView.setId(i);
             imageView.setPadding(2, 2, 2, 2);
-            imageView.setImageBitmap(BitmapFactory.decodeResource(
-                    getResources(), R.drawable.main_pic));
+/*            imageView.setImageBitmap(BitmapFactory.decodeResource(
+                    getResources(), R.drawable.main_pic));*/
             imageView.setScaleType(ImageView.ScaleType.FIT_XY);
             layout.addView(imageView);
         }
@@ -56,8 +56,8 @@ public class Index extends AppCompatActivity implements View.OnClickListener, Na
             ImageView imageView = new ImageView(this);
             imageView.setId(i);
             imageView.setPadding(2, 2, 2, 2);
-            imageView.setImageBitmap(BitmapFactory.decodeResource(
-                    getResources(), R.drawable.main_pic));
+/*            imageView.setImageBitmap(BitmapFactory.decodeResource(
+                    getResources(), R.drawable.main_pic));*/
             imageView.setScaleType(ImageView.ScaleType.FIT_XY);
             layout2.addView(imageView);
         }
