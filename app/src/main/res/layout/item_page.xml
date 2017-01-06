@@ -125,7 +125,8 @@
                 android:layout_height="220dp"
                 android:clickable="true"
                 android:id="@+id/imageView"
-                android:visibility="visible" />
+                android:visibility="visible"
+                android:src="@drawable/pic4"/>
 
             <LinearLayout
                 android:orientation="vertical"
@@ -143,7 +144,8 @@
                     android:clickable="true"
                     android:visibility="visible"
                     android:layout_marginTop="2dp"
-                    android:layout_marginBottom="2dp" />
+                    android:layout_marginBottom="2dp"
+                    android:src="@drawable/pic4"/>
 
                 <ImageButton
                     android:layout_width="54dp"
@@ -152,7 +154,8 @@
                     android:clickable="true"
                     android:visibility="visible"
                     android:layout_marginTop="2dp"
-                    android:layout_marginBottom="2dp" />
+                    android:layout_marginBottom="2dp"
+                    android:src="@drawable/pic4"/>
 
                 <ImageButton
                     android:layout_width="54dp"
@@ -161,7 +164,8 @@
                     android:clickable="true"
                     android:visibility="visible"
                     android:layout_marginTop="2dp"
-                    android:layout_marginBottom="2dp" />
+                    android:layout_marginBottom="2dp"
+                    android:src="@drawable/pic4"/>
 
             </LinearLayout>
 
